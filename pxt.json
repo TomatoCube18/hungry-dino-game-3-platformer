@@ -11,8 +11,15 @@
         "main.ts",
         "README.md"
     ],
-    "preferredEditor": "blocksprj",
     "testFiles": [
         "test.ts"
-    ]
+    ],
+    "targetVersions": {
+        "target": "1.1.5",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
 }
