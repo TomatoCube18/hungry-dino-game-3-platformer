@@ -755,6 +755,7 @@ game.onUpdate(function () {
 game.onUpdateInterval(randint(2000, 6000), function () {
     cloud = sprites.create(cloud_list[randint(0, cloud_list.length - 1)], SpriteKind.Projectile)
     cloud.setFlag(SpriteFlag.Ghost, true)
+    cloud.setFlag(SpriteFlag.AutoDestroy, true)
     cloud.z = -50
     cloud.setPosition(scene.cameraLeft() + 160, randint(10, 80))
     cloud.vx = -10
