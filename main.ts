@@ -318,7 +318,7 @@ function clear_level () {
     for (let value of sprites.allOfKind(SpriteKind.Food)) {
         value.destroy()
     }
-    for (let value2 of sprites.allOfKind(SpriteKind.background)) {
+    for (let value2 of sprites.allOfKind(SpriteKind.Projectile)) {
         value2.destroy()
     }
 }
