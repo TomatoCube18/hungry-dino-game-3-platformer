@@ -281,7 +281,7 @@ function create_dino_animation () {
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (dino.isHittingTile(CollisionDirection.Bottom)) {
-        dino.vy = -135
+        dino.vy = -140
     }
 })
 function create_dino () {
@@ -311,7 +311,7 @@ function create_dino () {
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (dino.isHittingTile(CollisionDirection.Bottom)) {
-        dino.vy = -135
+        dino.vy = -140
     }
 })
 function clear_level () {
@@ -583,30 +583,30 @@ function create_map () {
             `, TileScale.Sixteen)
     } else {
         scene.setTileMap(img`
-            9 9 9 . . . . . . 5 . . . 5 . . . 5 . . . . . 5 
-            . . . . 5 . . . . . . . . . . . . . . . . . . . 
-            e . . . . . . d d d . . . . d d . . . . . . d . 
-            e e . . . . . . . . . d . . . . . . . . . . . 5 
-            e e e . . e . 5 . e . . . . . . . . e . . e . . 
-            e e e 2 2 e . . . e 2 2 2 2 2 2 2 2 e 2 2 e . e 
-            e e e e e e e e e e e e e e e e e e e e e e . e 
-            . . . . . . . . . . . . . . 5 . . . . . 3 . . . 
-            . . . d d d d d . . . 5 . . . . . . . . . . . . 
-            . 5 . . . . . . . . . . . . d d . . . . . . . . 
-            . . . . . . . . . d . . . . . . . . d . . . . . 
-            . . . e e . . . . . . . . . . . . . . . . . . . 
-            e e . 5 e 2 2 2 2 2 e e e . . . . . . . e e e . 
-            e e . . e e e e e e e e e 2 2 2 2 2 2 2 e e e 2 
-            e 5 . e e . 5 . . . . . e e e e e e e e e e e e 
-            e . . e e . . . . . 5 . e . . . 5 . . . . . . . 
-            e e . e e . . . . . . . e . . . . . . . . . . a 
-            e e . . . . . . . e e e e . . . . . . . . . d d 
-            5 . . . . . . . . . . . . . e . . e . . . . . . 
-            . . . . . d d . . . 5 . . . e 2 2 e . . d . 5 . 
-            . . . . . . . . . . . . . e e e e e e . . . . . 
-            . . d d . . . . d . . . . . . . . . . . . . . . 
-            7 . . . . . . . . 7 7 7 7 . . . . . . d . 7 7 7 
-            e 2 2 2 2 2 2 2 2 e e e e 2 2 2 2 2 2 2 2 e e e 
+            999......5...5...5.....5
+            ....5...................
+            e......ddd....dd......d.
+            ee.........d...........5
+            eee..e.5.e........e..e..
+            eee22e...e22222222e22e.e
+            eeeeeeeeeeeeeeeeeeeeee.e
+            ..............5.....3...
+            ...ddddd...5............
+            .5............dd........
+            .........d........d.....
+            ...ee...................
+            ee.5e22222eee.......eee.
+            ee..eeeeeeeee2222222eee2
+            e5.ee.5.....eeeeeeeeeeee
+            e..ee.....5.e...5.......
+            ee.ee.......e..........a
+            ee.......eeee.........dd
+            5.............e..e......
+            .....dd...5...e22e..d.5.
+            .............eeeeee.....
+            ..dd....d...............
+            7........7777......d.777
+            e22222222eeee22222222eee
             `, TileScale.Sixteen)
     }
     cloud_list = [img`
